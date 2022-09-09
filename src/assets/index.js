@@ -21,8 +21,41 @@ import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
+import client from "./client.svg";
+import moneyTime from "./moneyTime.svg";
+import profile from "./profile.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 
-export { airbnb, bill, binance, card, coinbase, dropbox, logo, logoHeader, quotes, robot, send, shield, star, menu, close, google, apple, arrowUp, discount, facebook, instagram, linkedin, twitter, people01, people02, people03 };
+export {
+  airbnb,
+  bill,
+  binance,
+  card,
+  coinbase,
+  dropbox,
+  logo,
+  logoHeader,
+  quotes,
+  robot,
+  send,
+  shield,
+  star,
+  menu,
+  close,
+  google,
+  apple,
+  arrowUp,
+  discount,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  client,
+  moneyTime,
+  profile,
+  people01,
+  people02,
+  people03,
+};
