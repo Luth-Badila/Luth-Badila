@@ -14,8 +14,12 @@ const Billing = () => (
         Lorem ipsum dolor sit amet. <br className="sm:block hidden" /> Lorem, ipsum dolor.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore blanditiis excepturi ad numquam eveniet deserunt molestiae expedita voluptas rerum porro!</p>
+      <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
+        <img src="" alt="desktop" className="w-[128px] h-[42px] object-contain mr-5 cursor-pointer" />
+        <img src="" alt="tablet" className="w-[128px] h-[42px] object-contain cursor-pointer" />
+        <img src="" alt="handphone" className="w-[128px] h-[42px] object-contain cursor-pointer" />
+      </div>
     </div>
-    <div></div>
   </section>
 );
 
