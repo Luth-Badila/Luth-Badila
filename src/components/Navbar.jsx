@@ -6,7 +6,11 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logoHeader} alt="logo" className="w-[150px] h-[80px]" />
+      <div>
+        <a href="#home">
+          <img src={logoHeader} alt="logo" className="w-[150px] h-[80px]" />
+        </a>
+      </div>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, i) => (
           <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${i === navLinks.length - 1 ? "mr-0" : "mr-10"} text-white`}>

@@ -24,6 +24,7 @@ import twitter from "./twitter.svg";
 import client from "./client.svg";
 import moneyTime from "./moneyTime.svg";
 import profile from "./profile.svg";
+import porto1 from "./porto1.png";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
@@ -37,6 +38,7 @@ export {
   dropbox,
   logo,
   logoHeader,
+  porto1,
   quotes,
   robot,
   send,
