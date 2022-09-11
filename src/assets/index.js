@@ -1,9 +1,13 @@
 import airbnb from "./airbnb.png";
+import airbnbsvg from "./airbnb.svg";
 import bill from "./bill.png";
 import binance from "./binance.png";
+import binancesvg from "./binance.svg";
 import card from "./card.png";
 import coinbase from "./coinbase.png";
+import coinbasesvg from "./coinbase.svg";
 import dropbox from "./dropbox.png";
+import dropboxsvg from "./dropbox.svg";
 import logo from "./logo.svg";
 import logoHeader from "./logoHeader.svg";
 import quotes from "./quotes.svg";
@@ -31,11 +35,15 @@ import people03 from "./people03.png";
 
 export {
   airbnb,
+  airbnbsvg,
   bill,
   binance,
+  binancesvg,
   card,
   coinbase,
+  coinbasesvg,
   dropbox,
+  dropboxsvg,
   logo,
   logoHeader,
   porto1,
