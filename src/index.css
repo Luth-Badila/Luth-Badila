@@ -27,16 +27,16 @@
     background: linear-gradient( 157.81deg, #def9fa -43.27%, #ffd1d1 -21.24%, #fe8b8b 12.19%, #eb7d7d 29.82%, #e65c5c 51.94%, #cf3333 90.29%);
 }
 
+.bg-red-gradient-2 {
+    background: linear-gradient( -168.39deg, #ffffff -278.56%, #430000 -78.47%, #341201 91.61%);
+}
+
 .bg-black-gradient {
     background: linear-gradient( 144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
 }
 
 .bg-black-gradient-2 {
     background: linear-gradient( -168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
-}
-
-.bg-black-gradient-2 {
-    background: linear-gradient( -168.39deg, #ffffff -278.56%, #430000 -78.47%, #341201 91.61%);
 }
 
 .bg-gray-gradient {
