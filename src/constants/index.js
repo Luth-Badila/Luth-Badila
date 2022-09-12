@@ -84,6 +84,7 @@ export const stats = [
 
 export const footerLinks = [
   {
+    id: "footer",
     title: "Useful Links",
     links: [
       {

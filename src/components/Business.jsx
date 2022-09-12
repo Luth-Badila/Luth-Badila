@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+
 import { features } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
+import { useInView } from "react-intersection-observer";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
@@ -16,16 +19,39 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const Business = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+  const animation = useAnimation();
+  useEffect(() => {
+    console.log("use effect hook, inView = ", inView);
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        x: "-100vw",
+      });
+    }
+  }, [inView]);
+
   return (
     <div>
-      <section id="features" className={`${layout.section}`}>
-        <div className={`${layout.sectionInfo}`}>
+      <section ref={ref} id="features" className={`${layout.section}`}>
+        <motion.div className={`${layout.sectionInfo}`} initial={{ x: "-100vw" }} animate={animation}>
           <h2 className={`${styles.heading2} capitalize`}>
             get more profit <br className="sm:block hidden" /> by creating a website
           </h2>
           <p className={`${styles.paragraph} max-w-[470px] mt-5`}>We lead you to grow and achieve more profit by creating a website that makes your work and life easier</p>
           <Button styles="mt-10" />
-        </div>
+        </motion.div>
         <div className={`${layout.sectionImg} flex-col`}>
           {features.map((feature, index) => (
             <FeatureCard key={feature.id} {...feature} index={index} />
