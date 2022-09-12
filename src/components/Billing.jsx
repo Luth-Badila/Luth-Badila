@@ -1,26 +1,55 @@
-import React from "react";
-import { apple, bill, google } from "../assets";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+import { desktop, hp, tablet } from "../assets";
 import styles, { layout } from "../style";
 
-const Billing = () => (
-  <section id="product" className={`${layout.sectionReverse}`}>
-    <div className={`${layout.sectionImgReverse}`}>
-      <img src="" alt="slider" className="w-[100%] h-[100%] relative z-5" />
-      <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
-      <div className="absolute z-[0] -left-1/2 bottom-0 w-[50%] h-[50%] rounded-full pink__gradient" />
-    </div>
-    <div className={`${layout.sectionInfo}`}>
-      <h2 className={`${styles.heading2}`}>
-        Lorem ipsum dolor sit amet. <br className="sm:block hidden" /> Lorem, ipsum dolor.
-      </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore blanditiis excepturi ad numquam eveniet deserunt molestiae expedita voluptas rerum porro!</p>
-      <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
-        <img src="" alt="desktop" className="w-[128px] h-[42px] object-contain mr-5 cursor-pointer" />
-        <img src="" alt="tablet" className="w-[128px] h-[42px] object-contain cursor-pointer" />
-        <img src="" alt="handphone" className="w-[128px] h-[42px] object-contain cursor-pointer" />
+const Billing = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+
+  const animation = useAnimation();
+  useEffect(() => {
+    console.log("use effect hook, inView = ", inView);
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        x: "100vw",
+      });
+    }
+  }, [inView]);
+
+  return (
+    <section ref={ref} id="product" className={`${layout.sectionReverse}`}>
+      <div className={`${layout.sectionImgReverse}`}>
+        <img src="" alt="slider" className="w-[100%] h-[100%] relative z-5" />
+        <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
+        <div className="absolute z-[0] -left-1/2 bottom-0 w-[50%] h-[50%] rounded-full pink__gradient" />
       </div>
-    </div>
-  </section>
-);
+      <motion.div className={`${layout.sectionInfo}`} initial={{ x: "100vw" }} animate={animation}>
+        <h2 className={`${styles.heading2}`}>
+          Responsive Web <br className="sm:block hidden" /> Design
+        </h2>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>We always create responsive web, which can be accessed by various devices with different screen sizes which will make users more comfortable when visiting your web</p>
+        <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
+          <img src={desktop} alt="desktop" className="w-[150px] h-[60px] object-contain mr-5 cursor-pointer" />
+          <img src={tablet} alt="tablet" className="w-[150px] h-[60px] object-contain cursor-pointer" />
+          <img src={hp} alt="handphone" className="w-[150px] h-[60px] object-contain cursor-pointer" />
+        </div>
+      </motion.div>
+    </section>
+  );
+};
 
 export default Billing;
