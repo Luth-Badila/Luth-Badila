@@ -34,7 +34,7 @@ const Hero = () => (
     <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
       <div className="relative">
         <FaArrowCircleLeft size={35} className="absolute top-[50%] left-[20px] hover:text-white rounded-full text-white/70 cursor-pointer select-none z-[100] hover:text-red-700 p-2" />
-        <img src={porto1} alt="Billing" className="w-[90%] h-[90%] relative z-[5]" />
+        <img src={porto1} alt="porto" className="lg:w-[90%] lg:h-[90%] lg:px-0 px-4 w-[100%] h-[100%] relative z-[5]" />
         <FaArrowCircleRight size={35} className="absolute top-[50%] rounded-full right-[90px] text-white/70 hover:text-white cursor-pointer select-none z-[100] hover:text-red-700 p-2" />
       </div>
       <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
