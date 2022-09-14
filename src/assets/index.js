@@ -35,6 +35,7 @@ import people03 from "./people03.png";
 import desktop from "./desktop.png";
 import hp from "./hp.png";
 import tablet from "./tablet.png";
+import size from "./3size.png";
 
 export {
   airbnb,
@@ -74,4 +75,5 @@ export {
   desktop,
   hp,
   tablet,
+  size,
 };
