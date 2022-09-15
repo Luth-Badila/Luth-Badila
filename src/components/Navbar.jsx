@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { close, logoHeader, menu } from "../assets";
+import { close, logoHeader, logo2, menu } from "../assets";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logoHeader} alt="hoobank" className="w-[150px] h-[80px]" />
+      <img src={logo2} alt="luth badila" className="w-[170px] h-[60px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
