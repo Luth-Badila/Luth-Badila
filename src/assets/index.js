@@ -31,6 +31,10 @@ import client from "./client.svg";
 import moneyTime from "./moneyTime.svg";
 import profile from "./profile.svg";
 import porto1 from "./porto1.png";
+import porto2 from "./porto2.png";
+import porto3 from "./porto3.png";
+import porto4 from "./porto4.png";
+import porto5 from "./porto5.jpg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
@@ -55,6 +59,10 @@ export {
   logo3,
   logoHeader,
   porto1,
+  porto2,
+  porto3,
+  porto4,
+  porto5,
   quotes,
   robot,
   send,
