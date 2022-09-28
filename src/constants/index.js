@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnbsvg, binancesvg, coinbasesvg, dropboxsvg, airbnb, binance, coinbase, dropbox, client, moneyTime, profile } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, client, moneyTime, profile } from "../assets";
 
 export const navLinks = [
   {

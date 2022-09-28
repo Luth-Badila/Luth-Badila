@@ -1,28 +1,38 @@
-import React from "react";
-import styles from "./style";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import { Navbar, Hero, Clients, Stats, Business, CTA, CardDeal, Billing, Testimonials, Footer } from "./components";
+import Business from "./components/Business";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Stats from "./components/Stats";
 
-const App = () => (
-  <div className="bg-red w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
+const App = () => {
+  return (
+    <>
+      <Router>
         <Navbar />
-      </div>
-    </div>
-
-    <div className={`bg-red ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero />
-      </div>
-    </div>
-
-    <div className={`bg-red ${styles.paddingX} ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Stats /> <Business /> <Billing /> <CardDeal /> <Testimonials /> <Clients /> <CTA /> <Footer />
-      </div>
-    </div>
-  </div>
-);
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="bg-red h-[83.6vh]">
+                <Hero />
+                <Stats />
+              </div>
+            }
+          />
+          <Route
+            path="/business"
+            element={
+              <div className="bg-red px-4 h-[83.6vh]">
+                <Business />
+              </div>
+            }
+          />
+        </Routes>
+      </Router>
+    </>
+  );
+};
 
 export default App;
