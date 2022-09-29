@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import Business from "./components/Business";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Stats from "./components/Stats";
+import Portofolio from "./components/Portofolio";
 
 const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
         <Routes>
           <Route
             path="/"
             element={
-              <div className="bg-red h-[83.6vh]">
+              <div>
                 <Hero />
                 <Stats />
               </div>
@@ -24,12 +24,21 @@ const App = () => {
           <Route
             path="/business"
             element={
-              <div className="bg-red px-4 h-[83.6vh]">
+              <div>
                 <Business />
               </div>
             }
           />
+          <Route
+            path="/portofolio"
+            element={
+              <div>
+                <Portofolio />
+              </div>
+            }
+          />
         </Routes>
+        <Navbar />
       </Router>
     </>
   );

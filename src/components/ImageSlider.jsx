@@ -61,9 +61,9 @@ const ImageSlider = ({ Slides }) => {
         {Slides.map((slide, i) => {
           return (
             <div ref={slideRef} key={i} className={i === currentIndex ? "opacity-[1] ease-in duration-1000" : "opacity-0"}>
-              <FaArrowCircleLeft onClick={handleOnPrevClick} size={35} className="absolute top-[50%] left-[20px] hover:text-white rounded-full text-white/70 cursor-pointer select-none z-[100] hover:text-red-700 p-2" />
+              {/* <FaArrowCircleLeft onClick={handleOnPrevClick} size={35} className="absolute top-[50%] left-[20px] hover:text-white rounded-full text-white/70 cursor-pointer select-none z-[100] hover:text-red-700 p-2" /> */}
               {i === currentIndex && <img src={slide.url} alt="porto image" className="lg:w-[90%] lg:h-[90%] lg:px-0 px-4 w-[100%] h-[100%] relative z-[5]" />}
-              <FaArrowCircleRight onClick={handleOnNextClick} size={35} className="absolute top-[50%] rounded-full right-[90px] text-white/70 hover:text-white cursor-pointer select-none z-[100] hover:text-red-700 p-2" />
+              {/* <FaArrowCircleRight onClick={handleOnNextClick} size={35} className="absolute top-[50%] rounded-full right-[90px] text-white/70 hover:text-white cursor-pointer select-none z-[100] hover:text-red-700 p-2" /> */}
             </div>
           );
         })}
