@@ -1,5 +1,4 @@
-import React from "react";
-import { porto1, porto2, porto3, porto4, porto5 } from "../assets";
+import { porto1, porto2, porto3, porto4 } from "../assets";
 
 const Slides = [
   {
@@ -17,10 +16,6 @@ const Slides = [
   {
     url: porto4,
     title: "theatre",
-  },
-  {
-    url: porto5,
-    title: "photography",
   },
 ];
 

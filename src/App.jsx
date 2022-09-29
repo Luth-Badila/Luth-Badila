@@ -22,7 +22,7 @@ const App = () => {
             }
           />
           <Route
-            path="/business"
+            path="/whymakewebsite"
             element={
               <div>
                 <Business />
