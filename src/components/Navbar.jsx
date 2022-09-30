@@ -7,7 +7,7 @@ import { logoHeader } from "../assets";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex p-8 justify-between items-center navbar mt-12">
+    <nav className="w-full flex p-8 justify-between items-center navbar mt-12 bg-red h-[19.8vh]">
       <img src={logoHeader} alt="Luth-Badila" className="mb-2 flex items-center w-[200px] h-[80px]" />
       <ul className="list-none text-white flex mt-10 sm:mt-0 justify-end items-center gap-6">
         <li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-redHover`}>

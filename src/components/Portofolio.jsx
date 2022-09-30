@@ -12,8 +12,8 @@ const Portofolio = () => {
             <div key={i} class="w-60 p-2 border-[3px] border-slate-100 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
               <img class="h-40 object-cover rounded-xl" alt="gambar" src={Slide.url} />
               <div class="p-2">
-                <h2 class="font-bold text-lg mb-2 text-white">Heading</h2>
-                <p class="text-sm text-white">Simple Yet Beautiful Card Design with TaiwlindCss. Subscribe to our Youtube channel for more ...</p>
+                <h2 class="font-bold text-lg mb-2 text-white">{Slide.title}</h2>
+                <p class="text-sm text-white">{Slide.body}</p>
               </div>
               <div class="m-2">
                 <NavLink role="button" href="" className="text-white hover:bg-redHover p-2 rounded-md">

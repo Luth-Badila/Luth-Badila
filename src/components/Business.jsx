@@ -9,7 +9,7 @@ import Button from "./Button";
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimRed`}>
-      <img src={icon} alt="icon" className="w-[128px] h-[128px] object-contain" />
+      <img src={icon} alt="icon" className="w-[130px] h-[128px] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
       <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23px] mb-1">{title}</h4>
@@ -44,7 +44,7 @@ const Business = () => {
 
   return (
     <div>
-      <section ref={ref} id="features" className={`${layout.section}`}>
+      <section ref={ref} id="features" className={`${layout.section} px-10 h-[74vh] bg-red`}>
         <motion.div className={`${layout.sectionInfo}`} initial={{ x: "-100vw" }} animate={animation}>
           <h2 className={`${styles.heading2} capitalize`}>
             get more profit <br className="sm:block hidden" /> by creating a website
