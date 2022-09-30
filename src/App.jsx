@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Stats from "./components/Stats";
 import Portofolio from "./components/Portofolio";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -21,22 +22,9 @@ const App = () => {
               </div>
             }
           />
-          <Route
-            path="/whymakewebsite"
-            element={
-              <div>
-                <Business />
-              </div>
-            }
-          />
-          <Route
-            path="/portofolio"
-            element={
-              <div>
-                <Portofolio />
-              </div>
-            }
-          />
+          <Route path="/whymakewebsite" element={<Business />} />
+          <Route path="/portofolio" element={<Portofolio />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Navbar />
       </Router>

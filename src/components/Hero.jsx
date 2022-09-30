@@ -9,7 +9,7 @@ import ImageSlider from "./ImageSlider";
 import Slides from "./Slides";
 
 const Hero = () => (
-  <section className={`flex md:flex-row flex-col h-[64.2vh]`}>
+  <section className={`flex md:flex-row flex-col sm:h-[64.2vh] h-[95vh]`}>
     <motion.div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} initial={{ x: "-100vw" }} animate={{ x: 0 }} transition={{ type: "spring", duration: 1, bounce: 0.3 }}>
       <div className="flex flex-row items-center py-[6px] px-4 rounded-[10px] md-2">
         <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
