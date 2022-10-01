@@ -23,6 +23,9 @@ import arrowUp from "./arrow-up.svg";
 import discount from "./Discount.svg";
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
+import whatsapp1 from "./whatsapp.png";
+import instagram1 from "./instagram.png";
+import telegram1 from "./telegram.png";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
 import client from "./client.svg";
@@ -84,4 +87,7 @@ export {
   hp,
   tablet,
   size,
+  whatsapp1,
+  instagram1,
+  telegram1,
 };

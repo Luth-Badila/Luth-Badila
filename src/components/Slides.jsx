@@ -20,6 +20,22 @@ const Slides = [
     photo: porto4,
     title: "theatre",
   },
+  {
+    photo: porto4,
+    title: "theatre",
+  },
+  {
+    photo: porto4,
+    title: "theatre",
+  },
+  {
+    photo: porto4,
+    title: "theatre",
+  },
+  {
+    photo: porto4,
+    title: "theatre",
+  },
 ];
 
 export default Slides;
