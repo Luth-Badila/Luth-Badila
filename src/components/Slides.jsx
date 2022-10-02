@@ -1,10 +1,10 @@
-import { porto1, porto2, porto3, porto4 } from "../assets";
+import { porto1, porto2, porto3, porto4, porto5 } from "../assets";
 
 const Slides = [
   {
     photo: porto1,
     title: "Simple Movie",
-    body: "This website has a feature to catch film api",
+    body: "This website has a feature to catch film api like 1mdb",
   },
   {
     photo: porto2,
@@ -18,23 +18,13 @@ const Slides = [
   },
   {
     photo: porto4,
-    title: "theatre",
+    title: "JalanPintasArt",
+    body: "This is JalanPintasArt web which is a screen printing company",
   },
   {
-    photo: porto4,
-    title: "theatre",
-  },
-  {
-    photo: porto4,
-    title: "theatre",
-  },
-  {
-    photo: porto4,
-    title: "theatre",
-  },
-  {
-    photo: porto4,
-    title: "theatre",
+    photo: porto5,
+    title: "LuthBlog",
+    body: "We made this website inspired by blogspot",
   },
 ];
 
