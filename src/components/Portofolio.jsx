@@ -15,7 +15,7 @@ const Portofolio = () => {
                 <p class="text-sm text-white">{Slide.body}</p>
               </div>
               <div class="m-2">
-                <NavLink role="button" href="" className="text-white hover:bg-redHover p-2 rounded-md cursor-pointer">
+                <NavLink role="button" href={`/${Slide.url}`} className="text-white hover:bg-redHover p-2 rounded-md cursor-pointer">
                   See More
                 </NavLink>
               </div>
