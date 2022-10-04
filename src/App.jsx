@@ -7,8 +7,8 @@ import Navbar from "./components/Navbar";
 import Stats from "./components/Stats";
 import Portofolio from "./components/Portofolio";
 import Contact from "./components/Contact";
-import FeedbackCard from "./components/FeedbackCard";
-import { feedback } from "./constants";
+import Testimonials from "./components/Testimonials";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   return (
@@ -30,12 +30,13 @@ const App = () => {
             element={
               <div>
                 <Business />
-                <FeedbackCard feedback={feedback} />
+                <Testimonials />
               </div>
             }
           />
           <Route path="/portofolio" element={<Portofolio />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </>

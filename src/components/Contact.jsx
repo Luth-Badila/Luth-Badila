@@ -3,7 +3,7 @@ import { telegram1, instagram1, whatsapp1 } from "../assets";
 const Contact = () => {
   return (
     <>
-      <div className="sm:h-[100vh] h-[125vh] flex flex-col justify-center items-center">
+      <div className="sm:h-[120vh] h-[140vh] flex flex-col justify-center items-center pb-4 sm:pb-6">
         <h2 className="text-white text-4xl">Contact Us</h2>
         <form className="flex flex-col gap-3 sm:w-[700px] w-[350px]">
           <label className="text-[20px] text-white">Subject</label>

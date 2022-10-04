@@ -36,6 +36,7 @@ import porto2 from "./porto2.png";
 import porto3 from "./porto3.png";
 import porto4 from "./porto4.png";
 import porto5 from "./porto5.png";
+import porto6 from "./porto6.png";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
@@ -62,6 +63,7 @@ export {
   porto3,
   porto4,
   porto5,
+  porto6,
   quotes,
   robot,
   send,

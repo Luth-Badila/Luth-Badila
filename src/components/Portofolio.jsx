@@ -4,7 +4,7 @@ import Slides from "./Slides";
 
 const Portofolio = () => {
   return (
-    <div className="flex justify-center items-center sm:items-start sm:h-[70vh] h-[screen] py-4 sm:py-0">
+    <div className="flex justify-center items-center sm:items-start sm:h-[70vh] h-[screen] py-4 sm:py-2">
       <div class="w-[100vw] gap-4 flex-wrap flex justify-center items-center sm:items-start">
         {Slides.map((Slide, i) => {
           return (
@@ -15,9 +15,9 @@ const Portofolio = () => {
                 <p class="text-sm text-white">{Slide.body}</p>
               </div>
               <div class="m-2">
-                <NavLink role="button" href={`/${Slide.url}`} className="text-white hover:bg-redHover p-2 rounded-md cursor-pointer">
+                <a role="button" target="_blank" href={Slide.url} className="text-white hover:bg-redHover p-2 rounded-md cursor-pointer">
                   See More
-                </NavLink>
+                </a>
               </div>
             </div>
           );
