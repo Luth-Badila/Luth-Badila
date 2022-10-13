@@ -9,6 +9,7 @@ import Portofolio from "./components/Portofolio";
 import Contact from "./components/Contact";
 import Testimonials from "./components/Testimonials";
 import NotFound from "./components/NotFound";
+import Success from "./components/Success";
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/portofolio" element={<Portofolio />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/success" element={<Success />} />
         </Routes>
       </Router>
     </>

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../style";
-import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 import { discount } from "../assets";
