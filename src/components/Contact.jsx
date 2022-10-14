@@ -29,9 +29,8 @@ const Contact = () => {
     if (data) {
       console.log(data);
       setFormError(null);
-      navigate("/success", { replace: true });
-      navigate(0);
     }
+    navigate("/success", { replace: true });
   };
 
   return (
