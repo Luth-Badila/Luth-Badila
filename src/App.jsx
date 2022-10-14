@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Business from "./components/Business";
 import Hero from "./components/Hero";
@@ -14,7 +14,7 @@ import Success from "./components/Success";
 const App = () => {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route
@@ -39,8 +39,9 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/success" element={<Success />} />
+          <Route path="/redirect" element={<Navigate to="/success" />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </>
   );
 };
