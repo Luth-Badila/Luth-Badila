@@ -20,7 +20,6 @@ const Contact = () => {
       setFormError("Please fill all the blank correctly");
       return;
     }
-
     const { data, error } = await supabase.from("porto3").insert([{ subject, message, note, webType, backend }]);
 
     if (error) {
@@ -29,9 +28,8 @@ const Contact = () => {
     if (data) {
       console.log(data);
       setFormError(null);
-      navigate("/success", { replace: true });
-      navigate(0);
     }
+    navigate("/success", { replace: true });
   };
 
   return (
@@ -67,9 +65,9 @@ const Contact = () => {
         <button className="bg-red-gradient text-white rounded-lg cursor-pointer w-[130px] p-3">Submit</button>
         {formError && <p className="text-white">{formError}</p>}
       </form>
+      <h2 className="text-white text-2xl mb-5 mt-3">Or</h2>
 
       {/* Social Media */}
-      <h2 className="text-white text-2xl mb-5 mt-3">Or</h2>
       <div className="flex flex-col gap-8 sm:flex-row">
         <a href="https://www.whatsapp.com/" target="_blank">
           <div className="flex gap-2 items-center">

@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Testimonials from "./components/Testimonials";
 import NotFound from "./components/NotFound";
 import Success from "./components/Success";
+import Failed from "./components/Failed";
 
 const App = () => {
   return (
@@ -39,7 +40,8 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/success" element={<Success />} />
-          <Route path="/redirect" element={<Navigate to="/success" />} />
+          <Route path="/failed" element={<Failed />} />
+          {/* <Route path="/redirect" element={<Navigate to="/success" />} /> */}
         </Routes>
       </BrowserRouter>
     </>
