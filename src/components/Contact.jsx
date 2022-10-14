@@ -27,14 +27,16 @@ const Contact = () => {
       setFormError("Please fill all the blank correctly");
     }
     if (data) {
+      console.log(data);
       setFormError(null);
-      navigate("/success");
+      navigate("/success", { replace: true });
+      navigate(0);
     }
   };
 
   return (
     <div className="sm:h-[120vh] h-[140vh] flex flex-col justify-center items-center pb-4 sm:pb-6">
-      <form className="flex flex-col gap-3 sm:w-[700px] w-[350px]">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:w-[700px] w-[350px]">
         <label htmlFor="subject" className="text-[20px] text-white">
           Subject
         </label>
@@ -44,13 +46,13 @@ const Contact = () => {
         </label>
         <textarea value={message} id="message" onChange={(e) => setMessage(e.target.value)} className="h-[100px] border border-black p-2 rounded-lg" />
         <label className="text-[20px] text-white">Web Type :</label>
-        <select value={webType} id="webType" onChange={(e) => setWebType(e.target.value)} className="p-2 rounded-lg">
+        <select value={webType} id="webType" onChange={(e) => setWebType(e.target.value)} className="p-2 rounded-lg text-sm">
           <option>Portofolio</option>
           <option>E-Commerce</option>
           <option>Company Profile</option>
         </select>
         <label className="text-[20px] text-white">Backend :</label>
-        <select value={backend} id="backend" onChange={(e) => setBackend(e.target.value)} className="p-2 rounded-lg">
+        <select value={backend} id="backend" onChange={(e) => setBackend(e.target.value)} className="p-2 rounded-lg text-sm">
           <option>Sanity</option>
           <option>MySql</option>
           <option>MongoDB</option>
@@ -62,9 +64,7 @@ const Contact = () => {
           Note :
         </label>
         <input type="text" value={note} id="note" onChange={(e) => setNote(e.target.value)} className="h-[50px] border border-black p-2 rounded-lg" />
-        <button onClick={handleSubmit} className="bg-red-gradient text-white rounded-lg cursor-pointer w-[130px] p-3">
-          Submit
-        </button>
+        <button className="bg-red-gradient text-white rounded-lg cursor-pointer w-[130px] p-3">Submit</button>
         {formError && <p className="text-white">{formError}</p>}
       </form>
 
