@@ -14,7 +14,7 @@ const Testimonials = () => {
           <br className="sm:block hidden" /> our clients
         </h1>
         <div className="w-full md:mt-0 mt-6">
-          <p className={`${styles.paragraph} text-left max-w-[450px]`}>
+          <p className={`${styles.paragraph} text-justify max-w-[600px]`}>
             clients who have created a website for their business clients who have created a website for their business clients who have created a website for their business clients who have created a website for their business clients who
             have created a website for their business clients who have created a website for their business
           </p>

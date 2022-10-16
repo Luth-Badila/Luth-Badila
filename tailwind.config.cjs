@@ -15,6 +15,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
       },
       dropShadow: {
         "3xl": "0 35px 35px rgba(0,0,0,1)",

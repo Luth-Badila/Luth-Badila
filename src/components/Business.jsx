@@ -44,7 +44,7 @@ const Business = () => {
 
   return (
     <div>
-      <section ref={ref} id="features" className={`${layout.section} px-5 sm:h-[74vh] h-[150vh] bg-red`}>
+      <section ref={ref} id="features" className={`${layout.section} px-8 sm:h-[74vh] h-[150vh] bg-red`}>
         <motion.div className={`${layout.sectionInfo}`} initial={{ x: "-100vw" }} animate={animation}>
           <h2 className={`${styles.heading2} capitalize`}>
             get more profit <br className="sm:block hidden" /> by creating a website
