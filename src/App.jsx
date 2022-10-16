@@ -40,7 +40,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/success" element={<Success />} />
-          <Route path="/failed" element={<Failed />} />
           {/* <Route path="/redirect" element={<Navigate to="/success" />} /> */}
         </Routes>
       </BrowserRouter>
