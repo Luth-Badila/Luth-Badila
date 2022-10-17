@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Business from "./components/Business";
 import Hero from "./components/Hero";
@@ -10,7 +10,6 @@ import Contact from "./components/Contact";
 import Testimonials from "./components/Testimonials";
 import NotFound from "./components/NotFound";
 import Success from "./components/Success";
-import Failed from "./components/Failed";
 
 const App = () => {
   return (

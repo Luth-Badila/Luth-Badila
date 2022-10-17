@@ -44,6 +44,8 @@ import desktop from "./desktop.png";
 import hp from "./hp.png";
 import tablet from "./tablet.png";
 import size from "./3size.png";
+import web1 from "./web1.svg";
+import web2 from "./web2.svg";
 
 export {
   airbnb,
@@ -92,4 +94,6 @@ export {
   whatsapp1,
   instagram1,
   telegram1,
+  web1,
+  web2,
 };
