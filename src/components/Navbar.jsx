@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { FaHome, FaFileCode } from "react-icons/fa";
 import { MdContacts } from "react-icons/md";
-import { RiQuestionnaireFill } from "react-icons/ri";
+import { RiQuestionnaireFill, RiNewspaperLine } from "react-icons/ri";
 
 import { logoHeader } from "../assets";
 
@@ -32,6 +32,12 @@ const Navbar = () => {
           <NavLink to="/whymakewebsite" className="sm:text-md text-xs sm:mb-0 mb-11 flex flex-col items-center gap-1">
             <RiQuestionnaireFill className="w-[40px] h-[30px] sm:h-[40px]" />
             <p className="sm:flex hidden">Why Make Website ?</p>
+          </NavLink>
+        </li>
+        <li className={`font-poppins font-normal cursor-pointer hover:text-redHover`}>
+          <NavLink to="/cv" className="sm:text-md text-xs sm:mb-0 mb-11 flex flex-col items-center gap-1">
+            <RiNewspaperLine className="w-[40px] h-[30px] sm:h-[40px]" />
+            <p className="sm:flex hidden">My CV</p>
           </NavLink>
         </li>
       </ul>
