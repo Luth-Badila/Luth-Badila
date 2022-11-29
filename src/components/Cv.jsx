@@ -1,32 +1,18 @@
 import React from "react";
-import { logoHeader } from "../assets";
-import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
-import { TbBrandTelegram } from "react-icons/tb";
+import CvAside from "./CvAside";
+import CvFooter from "./CvFooter";
+import CvHeader from "./CvHeader";
+import CvMain from "./CvMain";
 
 const Cv = () => {
   return (
-    <div className="flex h-full border-solid rounded-lg text-white border-4 border-white justify-around items-center mx-5">
-      <div className="flex bg-blue-800">
-        <img src={logoHeader} alt="profile photo" className="sm:w-[170px] sm:h-[80px] w-[80px]" />
+    <div className="flex flex-col gap-3 mx-5 border-solid rounded-lg border-4 border-white ">
+      <CvHeader />
+      <div className="flex sm:flex-row -mx-[63px] flex-col justify-around items-center">
+        <CvAside />
+        <CvMain />
       </div>
-      <div className="text-2xl">
-        <div className="flex gap-2 items-center">
-          <div className="flex items-center gap-2">
-            <AiOutlineMail />
-            <p>FrancescoLutfi10@gmail.com</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <AiOutlineWhatsApp />
-            <p>087856524677</p>
-          </div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="flex items-center gap-2">
-            <TbBrandTelegram />
-            <p>087754786544</p>
-          </div>
-        </div>
-      </div>
+      <CvFooter />
     </div>
   );
 };
