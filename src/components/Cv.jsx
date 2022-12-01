@@ -6,9 +6,9 @@ import CvMain from "./CvMain";
 
 const Cv = () => {
   return (
-    <div className="flex flex-col gap-3 mx-5 border-solid rounded-lg border-4 border-white ">
+    <div className="flex flex-col gap-3 mx-24 border-solid rounded-lg border-4 border-white ">
       <CvHeader />
-      <div className="flex sm:flex-row -mx-[63px] flex-col justify-around items-center">
+      <div className="flex sm:flex-row -mx-[63px] flex-col gap-5 justify-around items-start">
         <CvAside />
         <CvMain />
       </div>
