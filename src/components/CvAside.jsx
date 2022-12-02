@@ -2,8 +2,8 @@ import React from "react";
 
 const CvAside = () => {
   return (
-    <div className="flex flex-col text-white gap-5">
-      <div className=" max-w-[600px] flex flex-col gap-2">
+    <div className="flex flex-col text-black gap-5">
+      <div className="max-w-[600px] flex flex-col gap-2">
         <div>
           <h1 className="font-bold">Hard Skill</h1>
           <ul className="ml-3 max-w-md list-disc list-inside">

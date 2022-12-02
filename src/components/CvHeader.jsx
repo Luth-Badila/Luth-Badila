@@ -5,7 +5,7 @@ import { TbBrandTelegram } from "react-icons/tb";
 
 const CvHeader = () => {
   return (
-    <div className="flex sm:flex-row flex-col h-full  text-white justify-around items-center mb-3">
+    <div className="flex sm:flex-row flex-col h-full  text-black justify-around items-center mb-3">
       <div className="flex bg-blue-800">
         <img src={logoHeader} alt="profile photo" className="sm:w-[170px] sm:h-[80px] w-[80px]" />
       </div>

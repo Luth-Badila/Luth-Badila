@@ -40,7 +40,14 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/success" element={<Success />} />
-          <Route path="/cv" element={<Cv />} />
+          <Route
+            path="/cv"
+            element={
+              <div id="pageToDownload">
+                <Cv rootElementid="pageToDownload" DownloadFileName="myCv" />
+              </div>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </>

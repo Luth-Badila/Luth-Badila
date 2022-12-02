@@ -7,7 +7,7 @@ import { RiFacebookBoxFill } from "react-icons/ri";
 
 const CvFooter = () => {
   return (
-    <div className="text-white flex flex-col gap-3 items-center justify-center mb-3">
+    <div className="text-black flex flex-col gap-3 items-center justify-center mb-3">
       <h1 className="font-bold text-lg">Social Media</h1>
       <div className="flex sm:flex-row flex-col gap-5">
         <NavLink href="" className="flex gap-2">

@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const CvMain = () => {
   return (
     <div>
-      <div className="flex flex-col gap-3 lg:max-w-[700px] max-w-[300px] text-white text-xl">
+      <div className="flex flex-col gap-3 lg:max-w-[700px] max-w-[300px] text-black text-xl">
         <div className="flex flex-col">
           <h1 className="font-bold">About Me</h1>
-          <p>I am a junior frontend developer, have the ability to make responsive web using html5, css, tailwind, bootstrap and using the next.js framework and react js library.</p>
+          <p className="w-[500px]">I am a junior frontend developer, have the ability to make responsive web using html5, css, tailwind, bootstrap and using the next.js framework and react js library.</p>
         </div>
         <div className="flex flex-col">
           <h1 className="font-bold">Experience:</h1>
