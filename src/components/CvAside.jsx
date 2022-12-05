@@ -2,7 +2,7 @@ import React from "react";
 
 const CvAside = () => {
   return (
-    <div className="flex flex-col text-black gap-5">
+    <div className="flex flex-col text-black gap-5 text-md">
       <div className="max-w-[600px] flex flex-col gap-2">
         <div>
           <h1 className="font-bold">Hard Skill</h1>
@@ -28,13 +28,13 @@ const CvAside = () => {
             <p>SDN Bunctitan</p>
             <p>SMPN 2 Sedati</p>
             <p>SMK ITABA: Multimedia</p>
-            <p>UNIVERSITAS MUHAMMADIYA SIDOARJO: Pendidikan Bahasa Inggris</p>
+            <p>UNIVERSITAS MUHAMMADIYA SIDOARJO: English Education</p>
           </div>
           <div className="flex flex-col gap-11 max-w-[100px]">
             <p>2005-2011</p>
             <p>2011-2014</p>
             <p>2014-2017</p>
-            <p>2017-now</p>
+            <p>2017-present</p>
           </div>
         </div>
       </div>
