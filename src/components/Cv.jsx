@@ -12,29 +12,32 @@ const Cv = ({ rootElementid, DownloadFileName }) => {
     const input = document.getElementById(rootElementid);
     html2canvas(input).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF("p", "pt", "a4");
-      pdf.addImage(imgData, "JPEG", 10, 50);
+      const pdf = new jsPDF({
+        orientation: "p",
+        unit: "mm",
+        format: "a4",
+        putOnlyUsedFonts: true,
+        floatPrecision: 16,
+      });
+      pdf.addImage(imgData, "JPEG", 0, 0);
+      // Margin lines: A4 = inch width:8.25 / height:11.75
+      // pdf.line(x, y, width, height);
+      pdf.setDrawColor("white");
+      pdf.setLineWidth(1 / 72);
+      pdf.line(0, 0, 0, 0);
       pdf.save(`${DownloadFileName}`);
     });
   };
 
   return (
     <>
-      <div className="flex flex-col gap-3 bg-white">
-        <CvHeader />
-        <div className="flex sm:flex-row flex-col gap-5 justify-start items-start">
+      <div className="flex flex-col gap-3 mx-24 bg-white rounded-lg mb-5">
+        <CvHeader downloadFileDocument={downloadFileDocument} />
+        <div className="flex sm:flex-row flex-col gap-5 mx-10 justify-around items-center">
           <CvAside />
           <CvMain />
         </div>
         <CvFooter />
-      </div>
-      <div className="flex flex-col justify-center items-center mt-5 text-white mb-5 gap-2">
-        <h1 className="text-2xl font-bold">Or</h1>
-        <Link href="">
-          <button onClick={downloadFileDocument} className="p-2 bg-rose-900 rounded-md">
-            Download
-          </button>
-        </Link>
       </div>
     </>
   );
