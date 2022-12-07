@@ -34,8 +34,8 @@ const Cv = ({ rootElementid, DownloadFileName }) => {
   };
 
   return (
-    <div className="flex sm:flex-row flex-col gap-10 px-5">
-      <div className="flex flex-col sm:w-[500px] w-[450px] justify-center items-center text-white">
+    <div className="flex lg:flex-row sm:flex-col flex-col gap-10 px-5">
+      <div className="flex flex-col lg:w-[500px] sm:w-[740px] w-[350px] justify-center items-center text-white">
         <CvDownload downloadFileDocument={downloadFileDocument} />
       </div>
       <div className="flex flex-col gap-3 sm:w-[750px] w-full p-3 bg-white rounded-lg mb-5">

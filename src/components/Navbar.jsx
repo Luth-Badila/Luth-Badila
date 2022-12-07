@@ -10,7 +10,10 @@ const Navbar = () => {
   return (
     <nav className="w-full flex sm:p-6 px-4 gap-4 justify-between items-center bg-red">
       <img src={logoHeader} alt="Luth-Badila" className="mb-2 flex items-center sm:w-[170px] sm:h-[80px] w-[80px]" />
-      <ul className="list-none text-white flex mt-8 sm:mt-0 justify-end items-center gap-6">
+      <ul
+        className="list-none text-white flex mt-8 sm:mt-0 justify-end items-center 
+      lg:gap-6 sm:gap-4 gap-1"
+      >
         <li className={`font-poppins font-normal cursor-pointer hover:text-redHover`}>
           <NavLink to="/" className="flex flex-col items-center gap-1 sm:text-md text-xs sm:mb-0 mb-11">
             <FaHome className="w-[40px] h-[30px] sm:h-[40px]" />
